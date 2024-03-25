@@ -66,6 +66,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }, function(error) {
                console.log('FAILED...', error);
             });
-        // Here you can add code to submit the form data using AJAX or perform any other action
     });
 });
