@@ -3,11 +3,13 @@ const header = document.querySelector(".ul");
 const li = document.querySelectorAll('li');
 li.forEach(l =>{
     l.addEventListener("click",()=>{
-        menu.src = 'imgs/menu.png';
+    	if(window.innerWidth <= 1190){
+    		menu.src = 'imgs/menu.png';
         menu.style.transform = "translateX(0)";
         header.style.display = "none";
-    
         header.style.width = "0";
+    	}
+        
         clicked = false;
     })
 })
